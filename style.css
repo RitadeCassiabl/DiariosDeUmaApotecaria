@@ -50,11 +50,12 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 88px;
-    height: 504px;
+    gap: 48px;
+    height: 100%;
     min-width: fit-content;
     min-height: fit-content;
     background: url(./assets/fundo.jpeg) no-repeat top center/cover;
+    padding-bottom: 56px;
 }
 
 #Fundo h1 {
@@ -135,6 +136,7 @@ h3 {
 .CardLink {
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: #9BFFA6;
     border: 2px solid #001F04;
     border-radius: 5px;
@@ -144,7 +146,6 @@ h3 {
     color: #001F04;
     font-size: 20px;
     padding: 24px;
-    width: 500px;
 }
 
 .Centro {
