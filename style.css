@@ -83,7 +83,7 @@ li {
 }
 
 /*Legenda das imagens doas cards*/
-#textoLegenda {
+.textoLegenda {
     font-size: 16px;
     color: white;
 }
@@ -114,12 +114,6 @@ h3 {
     box-shadow: 5px 5px 100px #331e3ca5;
 }
 
-#textocard {
-    font-size: 17px;
-    color: white;
-    width: 370px;
-    text-align: justify;
-}
 
 #links {
     display: flex;
@@ -133,6 +127,10 @@ h3 {
     border-radius: 5px;
 }
 
+.BordaVideo{
+    border: 2px solid #021337; 
+    border-radius: 5px;
+}
 
 .CardLink {
     display: flex;
@@ -174,4 +172,11 @@ h3 {
     flex-direction: column;
     align-items: center;
     gap: 8px;
+}
+
+.textocard {
+    font-size: 17px;
+    color: white;
+    width: 370px;
+    text-align: justify;
 }
