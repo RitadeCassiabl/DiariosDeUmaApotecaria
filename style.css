@@ -10,7 +10,66 @@ body {
     font-family: "Raleway", sans-serif;
 }
 
-/*Nav Bar*/
+/*Nav Bar Celular*/
+@media screen and (max-width: 450px) {
+nav {
+    background-color: #9BFFA6;
+    border: 2px solid #1E7F29;
+    border-radius: 10px;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px;
+    min-height: fit-content;
+    min-width: fit-content;
+    width: fit-content;
+    box-shadow: 5px 5px 100px #9BFFA6;
+}
+
+a {
+    text-decoration: none;
+    font-size: 2px;
+    color: #001F04;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #63b36b;
+    color: #c8f6cd;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+}
+/*Fundo pc*/
+
+#Fundo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    height: 100%;
+    min-width: fit-content;
+    min-height: fit-content;
+    background: url(./assets/fundo.jpeg) no-repeat top center/cover;
+    padding-bottom: 56px;
+}
+
+#Fundo h1 {
+    display: flex;
+    align-self: center;
+    font-size: 2;
+    color: #001F04;
+    text-shadow: 5px 5px 15px #9BFFA6;
+    font-weight: 400;
+    font-style: italic;
+}
+}
+
+/*Nav Bar Pc*/
 nav {
     background-color: #9BFFA6;
     border: 2px solid #1E7F29;
@@ -18,7 +77,7 @@ nav {
     padding: 24px 32px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin: 48px;
     min-height: fit-content;
     min-width: fit-content;
