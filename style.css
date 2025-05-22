@@ -10,66 +10,7 @@ body {
     font-family: "Raleway", sans-serif;
 }
 
-/*Nav Bar Celular*/
-@media screen and (max-width: 450px) {
-nav {
-    background-color: #9BFFA6;
-    border: 2px solid #1E7F29;
-    border-radius: 10px;
-    padding: 8px 16px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 16px;
-    min-height: fit-content;
-    min-width: fit-content;
-    width: fit-content;
-    box-shadow: 5px 5px 100px #9BFFA6;
-}
-
-a {
-    text-decoration: none;
-    font-size: 2px;
-    color: #001F04;
-    padding: 2px;
-    border-radius: 5px;
-}
-
-a:hover {
-    background-color: #63b36b;
-    color: #c8f6cd;
-}
-
-li {
-    display: flex;
-    justify-content: space-between;
-}
-/*Fundo pc*/
-
-#Fundo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 48px;
-    height: 100%;
-    min-width: fit-content;
-    min-height: fit-content;
-    background: url(./assets/fundo.jpeg) no-repeat top center/cover;
-    padding-bottom: 56px;
-}
-
-#Fundo h1 {
-    display: flex;
-    align-self: center;
-    font-size: 2;
-    color: #001F04;
-    text-shadow: 5px 5px 15px #9BFFA6;
-    font-weight: 400;
-    font-style: italic;
-}
-}
-
-/*Nav Bar Pc*/
+/*PC*/
 nav {
     background-color: #9BFFA6;
     border: 2px solid #1E7F29;
@@ -187,8 +128,8 @@ h3 {
     border-radius: 5px;
 }
 
-.BordaVideo{
-    border: 2px solid #021337; 
+.BordaVideo {
+    border: 2px solid #021337;
     border-radius: 5px;
 }
 
@@ -239,4 +180,186 @@ h3 {
     color: white;
     width: 370px;
     text-align: justify;
+}
+
+/*Celulares*/
+@media (max-width: 450px) and (min-width: 320px) {
+    nav {
+        background-color: #9BFFA6;
+        border: 2px solid #1E7F29;
+        border-radius: 5px;
+        padding: 8px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 16px;
+        min-height: fit-content;
+        min-width: fit-content;
+        box-shadow: 5px 5px 100px #9BFFA6;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 8px;
+        color: #001F04;
+        padding: 2px;
+        border-radius: 5px;
+    }
+
+    a:hover {
+        background-color: #63b36b;
+        color: #c8f6cd;
+    }
+
+    li {
+        display: flex;
+        gap: 24px;
+    }
+
+    /*Fundo pc*/
+
+    #Fundo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        height: 100%;
+        min-width: fit-content;
+        min-height: fit-content;
+        background: url(./assets/fundo.jpeg) no-repeat top center/cover;
+        padding-bottom: 56px;
+    }
+
+    #Fundo h1 {
+        display: flex;
+        align-self: center;
+        font-size: 25px;
+        color: #001F04;
+        text-shadow: 5px 5px 15px #9BFFA6;
+        font-weight: 400;
+        font-style: italic;
+    }
+
+    /*Card história*/
+
+    #Historia {
+        background-color: #4E0D0D;
+        border: 2px solid #001F04;
+        box-shadow: 5px 5px 100px #f18282b4;
+    }
+
+    #textoHistoria {
+        font-size: 5.3px;
+        color: white;
+        text-align: justify;
+        width: 178px;
+    }
+
+    /*Legenda das imagens doas cards*/
+    .textoLegenda {
+        font-size: 6px;
+        color: white;
+    }
+
+    h2 {
+        color: #9BFFA6;
+        font-size: 35px;
+        text-shadow: 5px 5px 5px #001f049a;
+        font-weight: 400;
+        font-style: italic;
+    }
+
+    h3 {
+        color: #001F04;
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+    #maomao {
+        background-color: #07465E;
+        border: 2px solid #021337;
+        box-shadow: 5px 5px 100px #07455ea1;
+    }
+
+    #jinshi {
+        background-color: #331E3C;
+        border: 2px solid #1D1120;
+        box-shadow: 5px 5px 100px #331e3ca5;
+    }
+
+
+    #links {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+    }
+
+    .Imagem {
+        height: 200px;
+        width: 120px;
+        border-radius: 5px;
+    }
+
+    .BordaVideo {
+        border: 2px solid #021337;
+        border-radius: 5px;
+    }
+
+    .CardLink {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #9BFFA6;
+        border: 2px solid #001F04;
+        border-radius: 5px;
+        min-width: fit-content;
+        min-height: fit-content;
+        gap: 16px;
+        color: #001F04;
+        font-size: 30px;
+        padding: 16px;
+    }
+
+    .CardLink a{
+        font-size: 12px;
+    }
+
+    .Centro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        padding: 16px;
+    }
+
+    .Card {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 12px;
+        border-radius: 5px;
+        min-height: fit-content;
+        min-width: fit-content;
+        width: fit-content;
+    }
+
+    .Imagemcard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .textocard {
+        font-size: 7px;
+        color: white;
+        width: 150px;
+        text-align: justify;
+    }
+
+    iframe{
+        width: 300px;
+        height: 200px;
+    }
 }
