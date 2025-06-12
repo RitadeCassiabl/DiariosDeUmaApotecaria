@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>funcoes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="Centro">
+      <h1>Funções</h1>
+      <form onbutton="handlebutton(event)" >
+
+        <div id="MaiorMenor" class="CardFuncao">
+          <h2>Maior e menor</h2>
+          <div class="alinhamento">
+            <div class="inputs">
+              <label for="primeiro">Primeiro valor</label>
+              <input
+                type="text"
+                id="primeiro"
+                name="primeiro"
+                placeholder="Digite o valor de a"
+              />
+            </div>
+            <div class="inputs">
+              <label for="segundo">Segundo valor</label>
+              <input
+                type="text"
+                id="segundo"
+                name=""
+                placeholder="Digite o valor de b"
+              />
+            </div>
+            <div class="inputs">
+              <label for="terceiro">Terceiro valor</label>
+              <input
+                type="text"
+                id="terceiro"
+                name=""
+                placeholder="Digite o valor de c"
+              />
+            </div>
+            <div class="inputs">
+              <label for="quarto">Quarto valor</label>
+              <input
+                type="text"
+                id="quarto"
+                name=""
+                placeholder="Digite o valor de d"
+              />
+            </div>
+            <div class="inputs">
+              <label for="quinto">Quinto valor</label>
+              <input
+                type="text"
+                id="quinto"
+                name=""
+                placeholder="Digite o valor de e"
+              />
+            </div>
+          </div>
+          <button type="button" onClick="MaiorMenor()">confirmar</button>
+          <p id="resultado"></p>
+        </div>
+        <div id="Vogal" class="CardFuncao">
+          <h2>Vogal ou consoante</h2>
+          <div class="alinhamento">
+            <div class="inputs">
+              <label for="letra">Letra</label>
+              <input
+                type="text"
+                id="letra"
+                name=""
+                placeholder="Digite a letra"
+              />
+            </div>
+          </div>
+          <button type="button" onClick="Vogal()">confirmar</button>
+          <p id="resultadoVogal"></p>
+        </div>
+        <div id="Limites" class="CardFuncao">
+          <h2>Limites</h2>
+          <div class="alinhamento">
+            <div class="inputs">
+              <label for="limiteInferior">Limite Inferior</label>
+              <input
+                type="text"
+                id="limiteInferior"
+                name=""
+                placeholder="Digite o limite inferior"
+              />
+            </div>
+            <div class="inputs">
+              <label for="limiteSuperior">Limite Superior</label>
+              <input
+                type="text"
+                id="limiteSuperior"
+                name=""
+                placeholder="Digite o limite superior"
+              />
+            </div>
+          </div>
+          <button type="button" onClick="Limites()">confirmar</button>
+          <p id="resultadoLimites"></p>
+        </div>
+        <div id="Ordem" class="CardFuncao">
+          <h2>Ordem</h2>
+          <div class="alinhamento">
+            <div class="inputs">
+              <label for="a">Primeiro Valor</label>
+              <input
+                type="text"
+                id="a"
+                name=""
+                placeholder="Digite o primeiro valor"
+              />
+            </div>
+            <div class="inputs">
+              <label for="b">Segundo Valor</label>
+              <input
+                type="text"
+                id="b"
+                name=""
+                placeholder="Digite o segundo valor"
+              />
+            </div>
+            <div class="inputs">
+              <label for="c">Terceiro Valor</label>
+              <input
+                type="text"
+                id="c"
+                name=""
+                placeholder="Digite o terceiro valor"
+              />
+            </div>
+          </div>
+          <button type="button" onClick="Ordem()">confirmar</button>
+          <p id="resultadoOrdem"></p>
+        </div>
+        <div id="PositivoNegativo" class="CardFuncao">
+          <h2>Positivo e Negativo</h2>
+          <div class="alinhamento">
+            <div class="inputs">
+              <label for="inputPositivoNegativo">Valor</label>
+              <input
+                type="text"
+                id="inputPositivoNegativo"
+                name=""
+                placeholder="Digite o valor"
+              />
+            </div>
+          </div>
+          <button type="button" onClick="PositivoNegativo()">confirmar</button>
+          <p id="resultadoPositivoNegativo"></p>
+        </div>
+        <div id="ParaImpar" class="CardFuncao">
+          <h2>Par ou ìmpar</h2>
+          <div class="alinhamento">
+            <div class="inputs">
+              <label for="inputParImpar">Valor</label>
+              <input
+                type="text"
+                id="inputParImpar"
+                name=""
+                placeholder="Digite o valor"
+              />
+            </div>
+          </div>
+          <button type="button" onClick="ParImpar()">confirmar</button>
+          <p id="resultadoParImpar"></p>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
