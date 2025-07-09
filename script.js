@@ -7,6 +7,22 @@ function limparResultados() {
     document.getElementById("resultadoParImpar").innerHTML = "";
 }
 
+function limparInputs(){
+    document.getElementById("primeiro").value = "";
+    document.getElementById("segundo").value = "";
+    document.getElementById("terceiro").value = "";
+    document.getElementById("quarto").value = "";
+    document.getElementById("quinto").value = "";
+    document.getElementById("letra").value = "";
+    document.getElementById("limiteInferior").value = "";
+    document.getElementById("limiteSuperior").value = "";
+    document.getElementById("a").value = "";
+    document.getElementById("b").value = "";
+    document.getElementById("c").value = "";
+    document.getElementById("inputPositivoNegativo").value = "";
+    document.getElementById("inputParImpar").value = "";
+}
+
 function MaiorMenor() {
     limparResultados();
     var num1 = parseFloat(document.getElementById("primeiro").value);
@@ -14,13 +30,14 @@ function MaiorMenor() {
     var num3 = parseFloat(document.getElementById("terceiro").value);
     var num4 = parseFloat(document.getElementById("quarto").value);
     var num5 = parseFloat(document.getElementById("quinto").value);
-
+    
     var maior, menor;
     var numeros = [num1, num2, num3, num4, num5];
     maior = Math.max(...numeros);
     menor = Math.min(...numeros);
-
+    
     document.getElementById("resultado").innerHTML = "Maior: " + maior + " | Menor: " + menor;
+    limparInputs();
 }
 
 function Vogal() {
@@ -33,6 +50,7 @@ function Vogal() {
     } else {
         document.getElementById("resultadoVogal").innerHTML = "A letra '" + letra + "' não é uma vogal.";
     }
+    limparInputs();
 }
 
 function Limites() {
@@ -51,6 +69,7 @@ function Limites() {
         }
     }
     document.getElementById("resultadoLimites").innerHTML = "soma dos pares: " + soma + " valores pares: " + pares;
+    limparInputs();
 }
 
 function Ordem() {
@@ -63,6 +82,7 @@ function Ordem() {
     numeros.sort((x, y) => x - y);
 
     document.getElementById("resultadoOrdem").innerHTML = numeros;
+    limparInputs();
 }
 
 function PositivoNegativo() {
@@ -79,6 +99,7 @@ function PositivoNegativo() {
     }
 
     document.getElementById("resultadoPositivoNegativo").innerHTML = resultado;
+    limparInputs();
 }
 
 function ParImpar() {
@@ -93,6 +114,18 @@ function ParImpar() {
     }
 
     document.getElementById("resultadoParImpar").innerHTML = resultado;
+    limparInputs();
+}
+
+function Sugestao() {
+    var sugestao = document.getElementById("sugestao").value;
+    if (sugestao.trim() === "") {
+        alert("Por favor, insira uma sugestão válida");
+        return;
+    } else {
+        alert("Sugestão enviada com sucesso 🐱✨");
+        document.getElementById("sugestao").value = "";
+    }
 }
 
 function handleSubmit(event) {

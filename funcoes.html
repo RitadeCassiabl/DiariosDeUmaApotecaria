@@ -7,16 +7,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="Centro">
-      <h1>Funções</h1>
-      <form onbutton="handlebutton(event)" >
-
+      <div class="NavFuncoes">
+        <h1>Funções</h1>
+        <button type="button" onClick="window.location.href='index.html'">
+          Voltar
+        </button>
+      </div>
+      <form
+        onbutton="handlebutton(event)"
+        style="display: flex; flex-direction: column; gap: 20px"
+      >
         <div id="MaiorMenor" class="CardFuncao">
           <h2>Maior e menor</h2>
           <div class="alinhamento">

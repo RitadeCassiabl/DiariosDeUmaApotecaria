@@ -2,7 +2,10 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=yes, initial-scale=1.0"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -160,19 +163,19 @@
         </div>
       </div>
       <h2 id="Aberturas">Aberturas</h2>
-      <div class="Centro"">
+      <div class="Aberturas">
         <iframe
-            class="BordaVideo"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/EQ-DKvLQlyQ?si=WeiiLDCCvZrDR6WG"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
+          class="BordaVideo"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/EQ-DKvLQlyQ?si=WeiiLDCCvZrDR6WG"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
         <iframe
-        class="BordaVideo"
+          class="BordaVideo"
           width="560"
           height="315"
           src="https://www.youtube.com/embed/sYC5BfJy2nw?si=T4PPOBAql_Ew8HY5"
@@ -181,8 +184,21 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
-          ></iframe>
+        ></iframe>
       </div>
-      </div>
+      <h2>Sugestões</h2>
+      <form id="Sugestao" class="CardForm">
+        <h2>Deixe aqui sua sugestão de melhoria para o nosso site 🍵🍃</h2>
+        <div class="inputs">
+          <textarea rows="5"
+            cols="50"
+            id="sugestao"
+            name="sugestao"
+            required></textarea>
+        </div>
+        <button type="button" onClick="Sugestao()">confirmar</button>
+      </form>
+    </div>
   </body>
+  <script src="script.js"></script>
 </html>
